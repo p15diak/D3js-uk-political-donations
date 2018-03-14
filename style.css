@@ -21,12 +21,12 @@ li {
 
 /* 	Information boxes for different chart layouts */
 /* Positioning */
-#initial-content, #a, #b, #c, #d, #e, #f, #view-party-type, #view-donor-type, #view-source-type, #partyInfo, #conservative, #labour, #libdem, #individual, #company, #union, #society, #other, #public-or-private-money, #public-or-private-money-split, #private-money, #public-money { 
+#initial-content, #a, #b, #c, #d, #e, #view-party-type, #view-donor-type, #view-source-type, #partyInfo, #conservative, #labour, #libdem, #individual, #company, #union, #society, #other, #public-or-private-money, #public-or-private-money-split, #private-money, #public-money,#view-amount { 
     position: absolute; 
 }
 
 /* Initial appearance on load */
-#view-party-type, #view-donor-type, #view-source-type {
+#view-party-type, #view-donor-type, #view-source-type,#view-amount{
     display: none;
 }
 
@@ -40,6 +40,11 @@ li {
     width: 272px;
 }
 
+#view-amount {
+    top: 400px;
+    left: 300px;
+    text-align: center; 
+}
 /*  Public or private funds view */
 
 #public-or-private-money {
@@ -63,15 +68,15 @@ li {
 /*  Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
-    background: rgba(8, 127, 189, 0.2);
+    background: rgba(#016666);
     top: 110px;
 }
 #labour {
-    background: rgba(240, 34, 51, 0.2);
+    background: rgba(#f87FBD);
     top: 330px;
 }
 #libdem {
-    background: rgba(253, 187, 48, 0.2);
+    background: rgba(#d0ff30);
     top: 550px;
 }
 
@@ -117,6 +122,30 @@ li {
 #f { top: 648px; left: 575px; }
 
 /* End of view */
+#view-donation-amount {
+    height: 100%;
+    left: 450px;
+    width: 370px;
+}
+#first {
+    top: 50px;
+}
+#second{
+    top: 150px;
+    left: 10px;
+}
+#third {
+    top: 335px;
+    left: -80px;
+}
+#fourth {
+    top: 480px;
+    right: -80px;
+}
+#last {
+    top: 650px;
+    left: -70px;
+}
 
 circle {
     stroke: rgba(238, 238, 238, 1);
