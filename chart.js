@@ -21,6 +21,9 @@ var entityCentres = {
 		individual: {x: w / 3.65, y: h / 3.3},
 	};
 
+
+
+
 var fill = d3.scale.ordinal().range(["#016666", "#f87FBD", "#d0ff30"]);
 
 var svgCentre = { 
@@ -411,6 +414,16 @@ function mouseover(d, i) {
     responsiveVoice.speak("Donators name is " + d.donor + " and the donation amount is " + amount + " pounds");
 
   // Set the text and voice attributes. 
+    
+    
+    
+	var newDonor = document.createElement("img");
+    newDonor.setAttribute("src","http://www.bizreport.com/2011/02/03/android-logo-200x200.jpg");
+    newDonor.setAttribute("height","42");
+    newDonor.setAttribute("width","42");
+    newDonor.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";');
+    document.getElementById("pictureSeries").insertBefore(newDonor,document.getElementById("pictureSeries").firstChild);
+    newDonor.src = imageFile;
 
 }
 	
